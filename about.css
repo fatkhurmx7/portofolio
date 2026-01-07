@@ -1,0 +1,161 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', Sans-Serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  animation: all 1s ease-out;
+}
+.bg{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  box-shadow: 0 0 15px 15px black;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*NAVIGATION...................*/
+.bos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 91.5%;
+  height: 30px;
+  background-color: #272727;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+*{
+  animation: masok 1s ease-out;
+  
+}
+@keyframes masok{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nama{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.hiji{
+  font-size: 13px;
+  color: white;
+}
+.dua{
+  font-size: 20px;
+  color: crimson;
+}
+.kolom{
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+li{
+  list-style: none;
+}
+a, .blh{
+  color: white;
+  text-decoration: none;
+}
+.onn{
+  font-size: 13px;
+  padding: 10px;
+  background-color: crimson;
+}
+.bos img{
+  height: 30px;
+  width: auto;
+  border-radius: 100%;
+}
+.bos img:hover{
+  height: 33px;
+  width: auto;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+}
+/*ISI................*/
+.isi{
+  display: flex;
+  flex-direction: column;
+  height: 88%;
+  width: 98%;
+  align-items: center;
+}
+.isi img{
+  margin-top: 15px;
+  height: 150px;
+  box-shadow: 0 0 15px 3px rgba(255,255,255,0.2);
+}
+.isi h1{
+  margin-top: 15px;
+  color: crimson;
+  text-shadow: 0 0 10px crimson;
+  text-decoration: underline white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.tulisan{
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  margin-top: 15px;
+  width: 85%;
+  height: 55%;
+  text-align: center;
+}
+.tulisan h2{
+  color: white;
+  font-size: 23px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+.tulisan h3{
+  color: crimson;
+  font-size: 15px;
+  text-shadow: 0 0 10px crimson;
+}
+.tulisan p{
+  color: white;
+  opacity: .6 !important;
+  text-align: left;
+  font-size: 11px;
+}
+table{
+  color: white;
+  padding: 5px;
+  font-size: 13px;
+  opacity: .6 !important;
+  text-align: left;
+}
+table, th, td{
+  border: none;
+}
+table .y{
+  opacity: 1 !important;
+  font-weight: bold;
+  font-size: 14px;
+}
+.bel{
+  display: flex;
+  justify-content: center;
+}

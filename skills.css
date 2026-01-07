@@ -1,0 +1,184 @@
+*, html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', Sans-Serif;
+}
+.container{
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  animation: all 1s ease-out;
+}
+.bg{
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  filter: blur(2px);
+  box-shadow: 0 0 15px 15px black;
+  background-image: url('bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/*NAVIGATION...................*/
+.bos{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  width: 91.5%;
+  height: 30px;
+  background-color: #272727;
+  box-shadow: 0 7px 15px 0 rgba(0,0,0,0.5);
+}
+*{
+  animation: masok 1s ease-out;
+  
+}
+@keyframes masok{
+  from{
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.nama{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 1px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+.hiji{
+  font-size: 13px;
+  color: white;
+}
+.dua{
+  font-size: 20px;
+  color: crimson;
+}
+.kolom{
+  margin-left: 70px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+  font-size: 11px;
+  text-transform: capitalize;
+}
+li{
+  list-style: none;
+}
+a, .blh{
+  color: white;
+  text-decoration: none;
+}
+.onn{
+  font-size: 13px;
+  padding: 10px;
+  background-color: crimson;
+}
+.bos img{
+  height: 30px;
+  width: auto;
+  border-radius: 100%;
+}
+.bos img:hover{
+  height: 33px;
+  width: auto;
+  border-radius: 100%;
+  transition: all .3s ease-in-out;
+}
+/*ISI................*/
+.isi{
+  display: flex;
+  flex-direction: column;
+  height: 88%;
+  width: 98%;
+  align-items: center;
+}
+.isi h1{
+  margin-top: 15px;
+  color: crimson;
+  text-shadow: 0 0 10px crimson;
+  text-decoration: underline white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.isiChart{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin-top: 5px;
+  width: 90%;
+  height: 90%;
+}
+.isiChart h3{
+  padding: 10px 25px;
+  color: white;
+  text-shadow: 0 0 10px white;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+.isiChart .coll{
+  display: grid;
+  align-items: space-around;
+  padding: 15px 25px;
+  align-items: center;
+  backdrop-filter: blur(10px) !important;
+  margin: 0 25px;
+  background-color: #0000004f !important;
+  box-shadow: 0 0 15px 10px #000000ba;
+  width: auto;
+  height: 30vh;
+  border-radius: 8px;
+}
+.isiChart .coll .NChart{
+  overflow: hidden;
+  margin-bottom: 0;
+  width: 100%;
+  height: 30px;
+  background-color: #252525;
+  border-radius: 5px;
+}
+.NChart .CValue{
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding-left: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 11px;
+  background-color: crimson;
+  box-shadow: 0 0 10px 2px crimson;
+  animation: crt 2s ease-in-out;
+}
+@keyframes crt{
+  from{
+    width: 0%;
+  }
+  to{
+    width: default;
+  }
+}
+.v1{
+  width: 60%;
+}
+.v2{
+  width: 70%;
+}
+.v3{
+  width: 80%;
+}
+.v4{
+  width: 90%;
+}
+.v5{
+  width: 100%;
+}
